@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+.wrapper {
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 700px;
+  height: 400px;
+}
+.wrapper .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: circle(0% at 0% 100%);
+  transition: all 0.7s;
+}
+#one:checked ~ .img-1 img {
+  clip-path: circle(150% at 0% 100%);
+}
+#two:checked ~ .img-1 img,
+#two:checked ~ .img-2 img {
+  clip-path: circle(150% at 0% 100%);
+}
+#three:checked ~ .img-1 img,
+#three:checked ~ .img-2 img,
+#three:checked ~ .img-3 img {
+  clip-path: circle(150% at 0% 100%);
+}
+#four:checked ~ .img-1 img,
+#four:checked ~ .img-2 img,
+#four:checked ~ .img-3 img,
+#four:checked ~ .img-4 img {
+  clip-path: circle(150% at 0% 100%);
+}
+#five:checked ~ .img-1 img,
+#five:checked ~ .img-2 img,
+#five:checked ~ .img-3 img,
+#five:checked ~ .img-4 img,
+#five:checked ~ .img-5 img {
+  clip-path: circle(150% at 0% 100%);
+}
+.wrapper .sliders {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  display: flex;
+}
+.wrapper .sliders label {
+  border: 2px solid rgb(142, 197, 252);
+  width: 13px;
+  height: 13px;
+  margin: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two,
+#three:checked ~ .sliders label.three,
+#four:checked ~ .sliders label.four,
+#five:checked ~ .sliders label.five {
+  width: 35px;
+  border-radius: 14px;
+  background: rgb(142, 197, 252);
+}
+.sliders label:hover {
+  background: rgb(142, 197, 252);
+}
+input[type="radio"] {
+  display: none;
+}
+
+/* half */
+
+.itemcards {
+  margin-left: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  display: grid;
+}
+
+.checkout {
+  outline: none;
+  text-decoration: none;
+  color: white;
+  margin-left: 48px;
+  border-radius: 8vh;
+  padding: 8px 57.7px;
+  background: #00adf0;
+  border: solid 1px #00adf0;
+}
+
+.addtocart {
+  color: white;
+  outline: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  margin-left: 48px;
+  border-radius: 8vh;
+  padding: 8px 55.6px;
+  background: #0e0e0e;
+  border: solid 1px #c5c5c5;
+}
+
+.numaro {
+  color: white;
+  font-size: 35px;
+  margin-left: 32.4px;
+}
+
+.less {
+  font-size: 30px;
+  border-radius: 2vh;
+}
+.quantity-plus {
+  margin-left: 40px;
+  text-align: center;
+  padding: 7px 17.4px;
+  background: #0e0e0e;
+  font-size: 30px;
+  color: white;
+  border: solid 1px #c5c5c5;
+  border-radius: 50%;
+}
+.quantity {
+  margin-left: 48px;
+  text-align: center;
+  padding: 7px 20px;
+  background: #0e0e0e;
+  font-size: 30px;
+  color: white;
+  border: solid 1px #c5c5c5;
+  border-radius: 50%;
+}
+
+.instock {
+  color: #33c608;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  margin-left: 50px;
+}
+
+.article {
+  margin: 0 auto;
+  border-radius: 2vh;
+  width: 300px;
+  height: 500px;
+  border: solid 1px #c5c5c5;
+  color: white;
+}
+.objett {
+  margin-top: 30px;
+}
+.objettt {
+  margin-top: 10px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+.novelty {
+  color: white;
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+  place-items: center;
+}
+
+.alignCenter {
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+.shop-index {
+  text-align: center;
+  color: white;
+  text-decoration: 5px;
+  text-decoration-color: purple;
+}
+
+.background-shop {
+  margin: 0 auto;
+  align-self: center;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.background-index {
+  margin-top: 50px;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #0e0e0e;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: cyan;
+  }
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div {
+  font-size: 40px;
+  font-weight: 700;
+}
